@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.project</groupId>
-    <artifactId>eureca-service</artifactId>
+    <artifactId>rmi-logs</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureca-service</name>
     <description>Eureka sevice for microservice</description>
