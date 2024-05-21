@@ -1,0 +1,22 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: eureka-service
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://eureka-server1:8888/eureka
+      # Отключить логи Eureka Discovery Client и Eureka Server
+
+# Настроить формат вывода логов для Eureka Discovery Client и Eureka Server
+logging:
+  level:
+    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%t] %C{1}.[%-5level] %msg%n"
